@@ -1,3 +1,7 @@
+.product{
+  margin: 25px;
+}
+
 .product__category, .product__price, .btn {
   font-size: 0.8em;
   text-transform: uppercase;
@@ -6,8 +10,8 @@
 }
 
 .product__category, .product__price, .btn span {
-margin: 0 5px 0 5px;
-font-size: 15px;
+margin: 0 8px 0 8px;
+font-size: 17px;
 
 }
 
