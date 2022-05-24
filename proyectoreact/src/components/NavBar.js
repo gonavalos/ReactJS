@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CardWidget from './CardWidget/CardWidget'
+import './NavBar.css'
+//navbar-dark bg-dark
+//<nav className="">
 
-const NavBar = () => {
+function Navbar(){
+    const [ navbar,setNavbar] = useState(false)
+
+
+    const changeBackground = () => {
+        if(window.scrollY >= 29){
+            setNavbar(true);
+        }else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
+    <div className='div1'>
+         <nav className={navbar  ? 'navbar navbar-light bg-light ' : 'navbar navbar-dark bg-transparent  sticky-bottom'}>
+    {/* // <nav className="navbar sticky-top ">  */}
+        <div className="navbar-expand-lg container-fluid">
             <a className="navbar-brand" href="#">Navbar</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -45,7 +63,10 @@ const NavBar = () => {
             
         </div>
     </nav>
+    </div>
+    
+
   )
 }
 
-export default NavBar
+export default Navbar
