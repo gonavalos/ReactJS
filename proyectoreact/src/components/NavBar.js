@@ -23,7 +23,8 @@ function Navbar(){
          <nav className={navbar  ? 'navbar navbar-light bg-light ' : 'navbar navbar-dark bg-transparent  sticky-bottom'}>
     {/* // <nav className="navbar sticky-top ">  */}
         <div className="navbar-expand-lg container-fluid">
-            <a className="navbar-brand" href="#">Navbar</a>
+            {/* <img src="../../public/img/img-logo/727D0726-44F0-4F02-9402-64E7BEA94612.jpeg" alt="logo"> </img> */}
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

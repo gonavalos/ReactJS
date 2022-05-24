@@ -7,6 +7,9 @@ import Divs from './components/div'
 import React, { useState } from 'react'
 import CardWidget from './components/CardWidget/CardWidget'
 import './components/NavBar.css'
+import ItemCount from './components/ItemCount/ItemCount'
+import Card from './components/Card/Card'
+import { width } from '@mui/system';
 
 
 function App() {
@@ -15,9 +18,13 @@ function App() {
 
       <Router>
         <Navbar/>
-      
-      <ItemListConteiner gretting=" Hola A Todos!!"/>
+
+        <Card />
+        
+{/*       
+      <ItemListConteiner gretting=" Hola A Todos!!"/> */}
       </Router>
+
       </div>
       
   );
