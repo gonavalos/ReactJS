@@ -1,21 +1,24 @@
 
-import React, { useState } from 'react'
-import '../NavBar.css'
-import '../div.css'
+import '../NavBar/NavBar.css'
+import { getProducts } from '../../asyncmock'
+import { useState, useEffect } from 'react'
+import ItemList from '../ItemList/ItemList'
 
-const ItemListConteiner = (props) => {
+
+const ItemListConteiner = () => {
+
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        getProducts().then(response =>{
+          setProducts(response)
+        })
+    
+      }, [])
 
     return(
         <div>
-            <h2>
-                {props.gretting}
-            </h2>
-            <div className='div2'></div>
-            <div className='div2'></div>
-            <div className='div2'></div>
-            <div className='div2'></div>
-            <div className='div2'></div>
-            <div className='div2'></div>
+            <ItemList products={products} />
         </div>
     )
 }

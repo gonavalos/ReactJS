@@ -1,0 +1,47 @@
+
+.navbar{
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    padding: 0 0 0 60px;
+    
+
+}
+
+
+
+.navbar.navbar-dark{
+    position: sticky;
+}
+
+.div1 {
+    height: 500px;
+    background-image: url(../../../public/img/img-index/LiveFire_Hero7.webp);
+    z-index: -99;
+    background-size: auto;
+    
+    
+}
+
+nav {
+    height: 70px;
+}
+
+nav a{
+    font-size: 17px;
+}
+
+.nav-item{
+    margin-left: 25px;
+
+}
+
+.logo span img {
+    height: 145px;
+    width: 150px;
+    position: absolute;
+    top: -30px;
+    margin-left: 30px;
+}

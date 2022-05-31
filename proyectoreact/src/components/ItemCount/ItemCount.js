@@ -1,28 +1,28 @@
 import { useState, useEffect } from "react";
 
-const CountFunction = () => {
-    const [count, setCount] = useState(0)
+const ItemCount = ({stock}) => {
+    const [count, setCount] = useState(1)
 
     const decrement = () => {
             
-            setCount((count) => count - 500)
+            if(count > 1 ){
+                setCount((count) => count - 0.5)
+    }
     }
 
     const increment = () => {
-        setCount(count + 500)
+        if (count < stock ) {
+            setCount(count + 0.5)
     }
-    
-    
-
-
+    }
 
     return(
         <div className="product__btn btn">
 
-            <span onClick={count > 0 ? decrement : ''} >-</span>
+            <span onClick={count > 0 ? decrement : ""} >-</span>
         
 
-            <a href="#"> {count} Grs. </a>
+            <a href="#"> {count} Kg. </a>
 
             
              
@@ -33,4 +33,4 @@ const CountFunction = () => {
 
 }
 
-export default CountFunction
+export default ItemCount
