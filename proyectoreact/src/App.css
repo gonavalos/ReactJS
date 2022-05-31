@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.div1 {
+  position: relative;
+  top: -70px;
+  z-index: -99;
+  
+  
+}

@@ -10,12 +10,13 @@ const products =[
     },
     {
         id: '2',
-        name: 'Entraña',
+        name: 'Rib Eye Steak',
         category: 'Signature',
         price: 1000,
-        img:'./img/img-eccomerce/tomahawk2.jpg',
+        img:'./img/img-eccomerce/OjoDeBife.jpg',
         stock: 20,
-        description: 'Otro tipo de carne'
+        description: 'Es un corte de carne argentina especial que en España se conoce como Lomo Alto. La precisa infiltración de grasa denominada marmoleo le otorga una textura, un sabor y una terneza que, sin duda, dan a este corte argentino la categoría de premium.'
+        
     },
     
     

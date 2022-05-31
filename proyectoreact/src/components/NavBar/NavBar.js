@@ -19,7 +19,7 @@ function Navbar(){
     window.addEventListener('scroll', changeBackground);
 
   return (
-    <div className='div1'>
+    // <div className='div1'>
          <nav className={navbar  ? 'navbar navbar-light bg-light ' : 'navbar navbar-dark bg-transparent  sticky-bottom'}>
     {/* // <nav className="navbar sticky-top ">  */}
         <div className="navbar-expand-lg container-fluid">
@@ -66,7 +66,7 @@ function Navbar(){
             
         </div>
     </nav>
-    </div>
+    // </div>
     
 
   )

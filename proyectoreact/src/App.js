@@ -10,6 +10,8 @@ function App() {
     <div className="App">
       <BrowserRouter />
         <Navbar/>
+        {/* <div className='div1'></div> */}
+        <img className='div1 img-fluid' src='/img/img-index/LiveFire_Hero7.webp'></img>
         <Router>
           {/* <Card /> */}
           <ItemListConteiner />

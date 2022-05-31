@@ -1,8 +1,8 @@
 
-import '../NavBar/NavBar.css'
 import { getProducts } from '../../asyncmock'
 import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
+import '../ItemListContainer/ItemListConteiner.css'
 
 
 const ItemListConteiner = () => {
@@ -17,7 +17,7 @@ const ItemListConteiner = () => {
       }, [])
 
     return(
-        <div>
+        <div className='ItemListConteiner'>
             <ItemList products={products} />
         </div>
     )
